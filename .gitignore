@@ -1,0 +1,14 @@
+node_modules/
+.env
+.DS_Store
+*.log
+dist/
+build/
+.cache/
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+*.local.json
+combine_courses.py

@@ -1,0 +1,680 @@
+{
+  "id": "d1",
+  "title": "One-to-One Discipleship Training",
+  "short": "Discipleship",
+  "edition": "3rd Edition",
+  "units": [
+    {
+      "n": "Unit I",
+      "t": "Encounter",
+      "l": [
+        0,
+        1,
+        2,
+        3,
+        14,
+        15,
+        16,
+        17,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33
+      ]
+    },
+    {
+      "n": "Unit III",
+      "t": "Growth",
+      "l": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "num": "Encounter 1 Who Is Jesus Christ? ........................................ 3",
+      "title": "Encounter 1 Who Is Jesus Christ? ........................................ 3",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Encounter 2 What Did Jesus Do? .......................................... 7",
+      "title": "Encounter 2 What Did Jesus Do? .......................................... 7",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Encounter 3 What Is Jesus Doing Now? ............................. 11",
+      "title": "Encounter 3 What Is Jesus Doing Now? ............................. 11",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Encounter 4 Believing in Jesus Christ ................................. 15",
+      "title": "Encounter 4 Believing in Jesus Christ ................................. 15",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 1 Assurance of Salvation ......................................... 35",
+      "title": "Lesson 1 Assurance of Salvation ......................................... 35",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 2 Attributes of God .................................................. 43",
+      "title": "Lesson 2 Attributes of God .................................................. 43",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 3 Word of God",
+      "title": "The Bible ...................................... 51",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 4 Prayer .................................................................... 61",
+      "title": "Lesson 4 Prayer .................................................................... 61",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 5 Fellowship ............................................................. 71",
+      "title": "Lesson 5 Fellowship ............................................................. 71",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 6 Witnessing ............................................................. 79",
+      "title": "Lesson 6 Witnessing ............................................................. 79",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 7 The Spirit-Filled Life ........................................... 87",
+      "title": "Lesson 7 The Spirit-Filled Life ........................................... 87",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 8 Temptation ............................................................ 93",
+      "title": "Lesson 8 Temptation ............................................................ 93",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 9 Obedience .............................................................. 99",
+      "title": "Lesson 9 Obedience .............................................................. 99",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 10 Ministry ............................................................... 107",
+      "title": "Lesson 10 Ministry ............................................................... 107",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Encounter 1",
+      "title": "Who Is Jesus Christ?",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Encounter 2",
+      "title": "What Did Jesus Do?",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Encounter 3",
+      "title": "What Is Jesus Doing Now?",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Encounter 4",
+      "title": "Believing in Jesus Christ",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 1",
+      "title": "Assurance of Salvation",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 2",
+      "title": "Attributes of God",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 3",
+      "title": "Word of God—The Bible",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 4",
+      "title": "Prayer",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 5",
+      "title": "Fellowship",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 6",
+      "title": "Witnessing",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 7",
+      "title": "The Spirit-Filled Life",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 8",
+      "title": "Temptation",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 9",
+      "title": "Obedience",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 10",
+      "title": "Ministry",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Encounter 1",
+      "title": "Who Is Jesus Christ?",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Encounter 2",
+      "title": "What Did Jesus Do?",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Encounter 3",
+      "title": "What Is Jesus Doing Now?",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Encounter 4",
+      "title": "Believing in Jesus Christ",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Encounter 4. Believing in Jesus Christ ● 17",
+      "title": "Encounter 4. Believing in Jesus Christ ● 17",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Encounter 4. Believing in Jesus Christ ● 19",
+      "title": "Encounter 4. Believing in Jesus Christ ● 19",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 1",
+      "title": "Assurance of Salvation",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 2",
+      "title": "Attributes of God",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 3",
+      "title": "Word of God: The Bible",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 4",
+      "title": "Prayer",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 5",
+      "title": "Fellowship",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 6",
+      "title": "Witnessing",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 7",
+      "title": "The Spirit-Filled Life",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 8",
+      "title": "Temptation",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 9",
+      "title": "Obedience",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 10",
+      "title": "Ministry",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 1. Assurance of Salvation ● 37",
+      "title": "Lesson 1. Assurance of Salvation ● 37",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 1. Assurance of Salvation ● 39",
+      "title": "Lesson 1. Assurance of Salvation ● 39",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 1. Assurance of Salvation ● 41",
+      "title": "Lesson 1. Assurance of Salvation ● 41",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 2. Attributes of God ● 45",
+      "title": "Lesson 2. Attributes of God ● 45",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 2. Attributes of God ● 47",
+      "title": "Lesson 2. Attributes of God ● 47",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 2. Attributes of God ● 49",
+      "title": "Lesson 2. Attributes of God ● 49",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 3. Word of God",
+      "title": "The Bible ● 53",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 3. Word of God",
+      "title": "The Bible ● 55",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 3. Word of God",
+      "title": "The Bible ● 57",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 4. Prayer ● 63",
+      "title": "Lesson 4. Prayer ● 63",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 4. Prayer ● 65",
+      "title": "Lesson 4. Prayer ● 65",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 4. Prayer ● 67",
+      "title": "Lesson 4. Prayer ● 67",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 4. Prayer ● 69",
+      "title": "Lesson 4. Prayer ● 69",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 5. Fellowship ● 73",
+      "title": "Lesson 5. Fellowship ● 73",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 5. Fellowship ● 75",
+      "title": "Lesson 5. Fellowship ● 75",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 5. Fellowship ● 77",
+      "title": "Lesson 5. Fellowship ● 77",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 6. Witnessing ● 81",
+      "title": "Lesson 6. Witnessing ● 81",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 6. Witnessing ● 83",
+      "title": "Lesson 6. Witnessing ● 83",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 6. Witnessing ● 85",
+      "title": "Lesson 6. Witnessing ● 85",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 7. The Spirit-Filled Life ● 89",
+      "title": "Lesson 7. The Spirit-Filled Life ● 89",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 7. The Spirit-Filled Life ● 91",
+      "title": "Lesson 7. The Spirit-Filled Life ● 91",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 8. Temptation ● 95",
+      "title": "Lesson 8. Temptation ● 95",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 8. Temptation ● 97",
+      "title": "Lesson 8. Temptation ● 97",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 9. Obedience ● 101",
+      "title": "Lesson 9. Obedience ● 101",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 9. Obedience ● 103",
+      "title": "Lesson 9. Obedience ● 103",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 9. Obedience ● 105",
+      "title": "Lesson 9. Obedience ● 105",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 10. Ministry ● 109",
+      "title": "Lesson 10. Ministry ● 109",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 10. Ministry ● 111",
+      "title": "Lesson 10. Ministry ● 111",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    },
+    {
+      "num": "Lesson 10. Ministry ● 113",
+      "title": "Lesson 10. Ministry ● 113",
+      "objectives": [],
+      "assignments": [],
+      "blocks": [],
+      "qCount": 0
+    }
+  ],
+  "exams": []
+}

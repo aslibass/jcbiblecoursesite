@@ -1,0 +1,31 @@
+{
+  "source": "Claude Design MCP - Discipleship Training",
+  "colors": {
+    "primary": "#1e3a8a",
+    "secondary": "#7c3aed",
+    "accent": "#dc2626",
+    "background": "#f8fafc",
+    "text": "#1e293b",
+    "light_text": "#475569",
+    "border": "#cbd5e1"
+  },
+  "typography": {
+    "font_stack": "\"Segoe UI\", -apple-system, BlinkMacSystemFont, sans-serif",
+    "heading_font": "\"Georgia\", \"Garamond\", serif",
+    "sizes": {
+      "h1": "2.5rem",
+      "h2": "2rem",
+      "h3": "1.5rem",
+      "body": "1.1rem",
+      "small": "0.9rem"
+    },
+    "line_height": 1.6
+  },
+  "spacing": {
+    "unit": "1rem",
+    "small": "0.5rem",
+    "medium": "1.5rem",
+    "large": "2rem",
+    "xlarge": "3rem"
+  }
+}

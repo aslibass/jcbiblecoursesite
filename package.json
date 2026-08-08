@@ -1,0 +1,16 @@
+{
+  "name": "jc-bible-course-site",
+  "version": "1.0.0",
+  "description": "Interactive Bible course study platform",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
