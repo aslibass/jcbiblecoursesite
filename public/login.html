@@ -109,6 +109,12 @@
     transform: translateY(1px);
   }
 
+  button:disabled {
+    background: #B08070;
+    cursor: not-allowed;
+    opacity: 0.7;
+  }
+
   .error {
     background: #FBF1EC;
     border: 1px solid #EBD5C9;
@@ -157,7 +163,7 @@
       />
     </div>
 
-    <button type="submit">Unlock Platform</button>
+    <button type="submit" id="submitBtn">Unlock Platform</button>
   </form>
 
   <div class="footer">
@@ -170,27 +176,46 @@
     e.preventDefault();
     const password = document.getElementById('password').value;
     const errorEl = document.getElementById('error');
+    const submitBtn = document.getElementById('submitBtn');
+
+    // Disable button to prevent double-submit
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Logging in...';
+    errorEl.classList.remove('show');
 
     fetch('/api/login', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ password })
     })
-      .then(r => r.json())
+      .then(r => {
+        if (!r.ok) {
+          throw new Error(`HTTP error! status: ${r.status}`);
+        }
+        return r.json();
+      })
       .then(data => {
-        if (data.success) {
+        if (data.success && data.token) {
           sessionStorage.setItem('auth', data.token);
-          window.location.href = '/courses';
+          // Give a moment for sessionStorage to persist
+          setTimeout(() => {
+            window.location.href = '/courses';
+          }, 100);
         } else {
-          errorEl.textContent = 'Incorrect password. Please try again.';
+          errorEl.textContent = data.error || 'Incorrect password. Please try again.';
           errorEl.classList.add('show');
           document.getElementById('password').value = '';
           document.getElementById('password').focus();
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Unlock Platform';
         }
       })
       .catch(err => {
-        errorEl.textContent = 'An error occurred. Please try again.';
+        console.error('Login error:', err);
+        errorEl.textContent = 'Connection error. Please check your password and try again.';
         errorEl.classList.add('show');
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Unlock Platform';
       });
   }
 
