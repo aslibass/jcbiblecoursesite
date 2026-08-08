@@ -36,6 +36,11 @@ app.get('/login', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'login.html'));
 });
 
+// Landing page (public) - MUST be before static middleware
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'landing.html'));
+});
+
 // Claude API client (if available)
 let claudeClient = null;
 try {
@@ -77,11 +82,6 @@ app.post('/api/login', (req, res) => {
 // Logout endpoint
 app.get('/logout', (req, res) => {
   res.redirect('/login');
-});
-
-// Landing page (public)
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'landing.html'));
 });
 
 // Course platform (protected)
