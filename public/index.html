@@ -36,7 +36,7 @@
       <div style="width: 100%; max-width: 780px;">
         <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #8A5A3B;">BEE Study Center</div>
         <h1 style="font-family: 'Source Serif 4', Georgia, serif; font-weight: 400; font-size: 46px; line-height: 1.1; margin: 14px 0 10px; letter-spacing: -0.01em;">Three courses, one room.</h1>
-        <p style="margin: 0 0 36px; color: #6E625C; font-size: 16px; line-height: 1.6; max-width: 46ch; text-wrap: pretty;">Discipleship Training, Christian Life, and Galatians –” read the lessons, answer the study questions, sit the exams. Choose who you are to continue.</p>
+        <p style=”margin: 0 0 36px; color: #6E625C; font-size: 16px; line-height: 1.6; max-width: 46ch; text-wrap: pretty;”>Discipleship Training, Christian Life, and Galatians – read the lessons, answer the study questions, sit the exams. Choose who you are to continue.</p>
 
         <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #9A8D84; margin-bottom: 12px;">Facilitator</div>
         <div style="display: grid; gap: 10px; margin-bottom: 30px;">
@@ -100,7 +100,7 @@
 
       <sc-if value="{{ isCourse }}" hint-placeholder-val="{{ false }}">
         <div style="max-width: 900px; margin: 0 auto; padding: 44px 24px 100px;">
-          <button onClick="{{ goHome }}" style="background: none; border: none; padding: 0; cursor: pointer; color: #8A5A3B; font-size: 13px; margin-bottom: 20px;">â† All courses</button>
+          <button onClick="{{ goHome }}" style="background: none; border: none; padding: 0; cursor: pointer; color: #8A5A3B; font-size: 13px; margin-bottom: 20px;">← All courses</button>
           <h1 style="font-family: 'Source Serif 4', Georgia, serif; font-weight: 400; font-size: 40px; margin: 0 0 8px; letter-spacing: -0.01em;">{{ courseTitle }}</h1>
           <p style="margin: 0 0 44px; color: #6E625C; font-size: 15px;">{{ courseMeta }}</p>
           <sc-for list="{{ courseUnits }}" as="u" hint-placeholder-count="3">
@@ -136,7 +136,7 @@
       <sc-if value="{{ isLesson }}" hint-placeholder-val="{{ false }}">
         <div style="display: grid; grid-template-columns: 250px 1fr; gap: 0; align-items: start;">
           <div style="position: sticky; top: 56px; max-height: calc(100vh - 56px); overflow-y: auto; padding: 32px 18px 60px 24px; border-right: 1px solid #E2DBD1;">
-            <button onClick="{{ backToCourse }}" style="background: none; border: none; padding: 0; cursor: pointer; color: #8A5A3B; font-size: 13px; margin-bottom: 18px;">â† {{ courseTitle }}</button>
+            <button onClick="{{ backToCourse }}" style="background: none; border: none; padding: 0; cursor: pointer; color: #8A5A3B; font-size: 13px; margin-bottom: 18px;">← {{ courseTitle }}</button>
             <sc-for list="{{ lessonNav }}" as="n" hint-placeholder-count="10">
               <button onClick="{{ n.onOpen }}" style="display: block; width: 100%; text-align: left; background: {{ n.bg }}; border: none; border-left: 2px solid {{ n.bar }}; padding: 8px 10px; cursor: pointer; font-size: 13px; color: {{ n.fg }}; line-height: 1.35;">{{ n.label }}</button>
             </sc-for>
@@ -175,7 +175,7 @@
                       <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: #8A5A3B;">Q{{ b.n }}</span>
                       <span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 17.5px; line-height: 1.55; color: #2B2320; text-wrap: pretty;">{{ b.x }}</span>
                     </div>
-                    <textarea value="{{ b.value }}" onChange="{{ b.onChange }}" placeholder="Write your answer–¦" rows="3" style="width: 100%; resize: vertical; padding: 11px 13px; border: 1px solid #E2DBD1; border-radius: 3px; background: #FCFAF6; font-family: 'Source Serif 4', Georgia, serif; font-size: 16px; line-height: 1.55; color: #2B2320;" style-focus="outline: none; border-color: #8A5A3B;"></textarea>
+                    <textarea value="{{ b.value }}" onChange="{{ b.onChange }}" placeholder="Write your answer…" rows="3" style="width: 100%; resize: vertical; padding: 11px 13px; border: 1px solid #E2DBD1; border-radius: 3px; background: #FCFAF6; font-family: 'Source Serif 4', Georgia, serif; font-size: 16px; line-height: 1.55; color: #2B2320;" style-focus="outline: none; border-color: #8A5A3B;"></textarea>
                     <div style="display: flex; align-items: center; gap: 12px; margin-top: 10px;">
                       <button onClick="{{ b.onFeedback }}" style="border: 1px solid #C9C3D8; background: #F2F0F8; color: #55568F; padding: 6px 12px; border-radius: 3px; cursor: pointer; font-size: 12px; font-weight: 500;" style-hover="border-color: #55568F;">{{ b.fbLabel }}</button>
                       <span style="font-size: 12px; color: #9A8D84;">{{ b.savedLabel }}</span>
@@ -199,7 +199,7 @@
 
       <sc-if value="{{ isExam }}" hint-placeholder-val="{{ false }}">
         <div style="max-width: 740px; margin: 0 auto; padding: 44px 24px 120px;">
-          <button onClick="{{ backToCourse }}" style="background: none; border: none; padding: 0; cursor: pointer; color: #8A5A3B; font-size: 13px; margin-bottom: 20px;">â† {{ courseTitle }}</button>
+          <button onClick="{{ backToCourse }}" style="background: none; border: none; padding: 0; cursor: pointer; color: #8A5A3B; font-size: 13px; margin-bottom: 20px;">← {{ courseTitle }}</button>
           <h1 style="font-family: 'Source Serif 4', Georgia, serif; font-weight: 400; font-size: 38px; margin: 0 0 8px; letter-spacing: -0.01em;">{{ examTitle }}</h1>
           <p style="margin: 0 0 34px; color: #6E625C; font-size: 14px;">{{ examSub }}</p>
 
@@ -353,9 +353,9 @@
               </div>
 
               <div style="background: #FFFDF9; border: 1px solid #E2DBD1; border-radius: 4px; padding: 22px 24px;">
-                <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #8A5A3B; margin-bottom: 14px;">Enrolled –” {{ studentCount }}</div>
+                <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #8A5A3B; margin-bottom: 14px;">Enrolled – {{ studentCount }}</div>
                 <div style="display: flex; gap: 8px; margin-bottom: 16px;">
-                  <input value="{{ newStudent }}" onChange="{{ onNewStudent }}" placeholder="Add a student–¦" style="flex: 1; padding: 10px 12px; border: 1px solid #E2DBD1; border-radius: 3px; background: #FCFAF6; font-size: 14px; color: #2B2320;" style-focus="outline: none; border-color: #8A5A3B;" />
+                  <input value="{{ newStudent }}" onChange="{{ onNewStudent }}" placeholder="Add a student…" style="flex: 1; padding: 10px 12px; border: 1px solid #E2DBD1; border-radius: 3px; background: #FCFAF6; font-size: 14px; color: #2B2320;" style-focus="outline: none; border-color: #8A5A3B;" />
                   <button onClick="{{ addStudent }}" style="border: none; background: #8A5A3B; color: #FFFDF9; padding: 10px 16px; border-radius: 3px; cursor: pointer; font-size: 14px;">Add</button>
                 </div>
                 <div style="display: grid; gap: 2px;">
@@ -372,7 +372,7 @@
 
           <sc-if value="{{ tabStudent }}" hint-placeholder-val="{{ false }}">
             <div>
-              <button onClick="{{ backToRoster }}" style="background: none; border: none; padding: 0; cursor: pointer; color: #8A5A3B; font-size: 13px; margin-bottom: 22px;">â† Roster</button>
+              <button onClick="{{ backToRoster }}" style="background: none; border: none; padding: 0; cursor: pointer; color: #8A5A3B; font-size: 13px; margin-bottom: 22px;">← Roster</button>
               <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; margin-bottom: 30px;">
                 <sc-for list="{{ studentStats }}" as="s" hint-placeholder-count="4">
                   <div style="background: #FFFDF9; border: 1px solid #E2DBD1; border-radius: 4px; padding: 18px 20px;">
@@ -648,7 +648,7 @@ class Component extends DCLogic {
           const answered = l.blocks.filter(b => b.t === 'q' && (p.answers[c.id + ':' + li + ':' + b.n] || '').trim()).length;
           return {
             title: l.title, sub: l.num + ' · ' + answered + '/' + (l.qCount || 0) + ' study questions answered',
-            dot: done ? 'âœ“' : '', dotBg: done ? accent : 'transparent',
+            dot: done ? '✓' : '', dotBg: done ? accent : 'transparent',
             dotFg: '#FFFDF9', dotBorder: done ? accent : '#D8CFC2',
             right: done ? 'Complete' : '',
             onOpen: () => this.setState({ view: 'lesson', lessonIdx: li })
@@ -668,7 +668,7 @@ class Component extends DCLogic {
       v.lessonTitle = l.title;
       v.lessonKicker = c.title + ' · ' + l.num;
       v.lessonNav = c.lessons.map((x, i) => ({
-        label: x.num + ' –” ' + x.title,
+        label: x.num + ' – ' + x.title,
         bg: i === li ? '#FFFDF9' : 'transparent',
         bar: i === li ? accent : 'transparent',
         fg: i === li ? '#2B2320' : (p.done[c.id + ':' + i] ? '#6E625C' : '#9A8D84'),
@@ -686,7 +686,7 @@ class Component extends DCLogic {
           o.feedback = p.feedback[k] || '';
           o.hasFeedback = !!o.feedback;
           o.savedLabel = o.value.trim() ? 'Saved for your facilitator' : '';
-          o.fbLabel = this.state.busyQ === k ? 'Thinking–¦' : (o.hasFeedback ? 'Ask again' : 'Check my answer');
+          o.fbLabel = this.state.busyQ === k ? 'Thinking…' : (o.hasFeedback ? 'Ask again' : 'Check my answer');
           o.onChange = (e) => {
             const val = e.target.value;
             this.save(d => {
@@ -699,7 +699,7 @@ class Component extends DCLogic {
         return o;
       });
       const done = !!p.done[c.id + ':' + li];
-      v.doneLabel = done ? 'âœ“ Lesson complete' : 'Mark lesson complete';
+      v.doneLabel = done ? '✓ Lesson complete' : 'Mark lesson complete';
       v.doneBg = done ? accent : '#FFFDF9';
       v.doneFg = done ? '#FFFDF9' : '#2B2320';
       v.doneBorder = done ? accent : '#E2DBD1';
@@ -710,7 +710,7 @@ class Component extends DCLogic {
         pp.last = Date.now();
       });
       const nxt = li + 1 < c.lessons.length ? c.lessons[li + 1] : null;
-      v.nextLabel = nxt ? 'Next: ' + nxt.title + ' â†’' : 'Back to course â†’';
+      v.nextLabel = nxt ? ‘Next: ‘ + nxt.title + ‘ →’ : ‘Back to course →’;
       v.nextLesson = () => nxt ? this.setState({ view: 'lesson', lessonIdx: li + 1 }) : this.setState({ view: 'course' });
     }
 
@@ -731,7 +731,7 @@ class Component extends DCLogic {
           isChoice: isTF || q.type === 'mcq',
           isWritten: q.type === 'short' || q.type === 'long',
           rows: q.type === 'long' ? 6 : 2,
-          placeholder: q.type === 'long' ? 'Write a full answer–¦' : 'Short answer–¦',
+          placeholder: q.type === 'long' ? 'Write a full answer…' : 'Short answer…',
           value: cur,
           onChange: (e) => {
             const val = e.target.value;
@@ -751,16 +751,16 @@ class Component extends DCLogic {
         };
       });
       const answered = exam.questions.filter(q => (st.examDraft[q.n] || '').trim()).length;
-      v.submitLabel = st.grading ? 'Grading–¦' : (res ? 'Grade again' : 'Submit for grading');
+      v.submitLabel = st.grading ? 'Grading…' : (res ? 'Grade again' : 'Submit for grading');
       v.examStatus = st.grading ? 'Claude is reading your answers against the course text.'
-        : (res && res.error ? 'Grading failed –” please try again.'
+        : (res && res.error ? 'Grading failed – please try again.'
         : answered + ' of ' + exam.questions.length + ' answered');
       const best = this.bestAttempt(user.id, c.id, st.examRef.ei);
       v.hasScore = !!(res && !res.error);
       if (v.hasScore) {
         v.scoreLine = res.got + ' / ' + res.total + '  ·  ' + res.pct + '%';
         v.scoreNote = best && best.pct > res.pct
-          ? 'Your best attempt is still ' + best.pct + '%. Retakes are unlimited –” the highest score counts.'
+          ? 'Your best attempt is still ' + best.pct + '%. Retakes are unlimited – the highest score counts.'
           : 'Recorded as your best score. Retakes are unlimited.';
       }
     }
@@ -809,7 +809,7 @@ class Component extends DCLogic {
       moduleToggles: (st.courses || []).map(c => {
         const on = D.modules[c.id] !== false;
         return {
-          title: c.title, check: on ? 'âœ“' : '',
+          title: c.title, check: on ? '✓' : '',
           bc: on ? accent : '#E2DBD1', bg: on ? '#F7EFE7' : '#FCFAF6',
           boxBc: on ? accent : '#C9C0B4', boxBg: on ? accent : 'transparent',
           onToggle: () => this.save(d => { d.modules[c.id] = !on; })
@@ -834,10 +834,10 @@ class Component extends DCLogic {
       const avg = examAvg(s.id);
       return {
         name: s.name,
-        c1: courses[0] ? pctFor(s.id, courses[0]) + '%' : '–”',
-        c2: courses[1] ? pctFor(s.id, courses[1]) + '%' : '–”',
-        c3: courses[2] ? pctFor(s.id, courses[2]) + '%' : '–”',
-        avg: avg === null ? '–”' : avg + '%',
+        c1: courses[0] ? pctFor(s.id, courses[0]) + '%' : '–',
+        c2: courses[1] ? pctFor(s.id, courses[1]) + '%' : '–',
+        c3: courses[2] ? pctFor(s.id, courses[2]) + '%' : '–',
+        avg: avg === null ? '–' : avg + '%',
         avgColor: avg === null ? '#9A8D84' : (avg >= 70 ? '#4F7A4A' : '#A0522D'),
         onOpen: () => this.setState({ focusStudent: s.id })
       };
@@ -851,7 +851,7 @@ class Component extends DCLogic {
     const flags = overall.filter(o => o.tot < median * 0.6);
     v.hasFlags = flags.length > 0;
     v.flagged = flags.map(o => ({
-      line: o.s.name + ' –” ' + o.tot + ' lessons complete, class median is ' + median + '.'
+      line: o.s.name + ' – ' + o.tot + ' lessons complete, class median is ' + median + '.'
     }));
 
     v.examBoards = [];
@@ -873,7 +873,7 @@ class Component extends DCLogic {
         title: e.title, course: c.title,
         summary: attempts.length
           ? attempts.length + ' of ' + D.students.length + ' sat it · class average ' + avg + '%'
-          : 'No attempts yet –” ' + e.questions.length + ' questions.',
+          : 'No attempts yet – ' + e.questions.length + ' questions.',
         hasMissed: missed.length > 0,
         missed: missed.map(m => ({ pct: Math.round(m.ratio * 100) + '% avg', text: 'Q' + m.k + ' · ' + m.text })),
         scores: attempts.map(x => ({
@@ -903,7 +903,7 @@ class Component extends DCLogic {
             const r = (best.results || []).find(x => String(x.n) === String(q.n));
             out.push({
               where: c.short + ' · ' + e.title + ' · Q' + q.n, prompt: q.text, answer: a,
-              hasScore: !!r, scoreLine: r ? 'AI score ' + r.score + '/' + r.marks + ' –” ' + r.feedback : ''
+              hasScore: !!r, scoreLine: r ? 'AI score ' + r.score + '/' + r.marks + ' – ' + r.feedback : ''
             });
           });
         });
@@ -934,7 +934,7 @@ class Component extends DCLogic {
         v.studentStats = courses.map(c => {
           const pp = this.lessonPct(s.id, c);
           return { label: c.short, value: pp.pct + '%', note: pp.d + ' of ' + pp.n + ' lessons' };
-        }).concat([{ label: 'Exam average', value: avg === null ? '–”' : avg + '%', note: 'best attempt per exam' }]);
+        }).concat([{ label: 'Exam average', value: avg === null ? '–' : avg + '%', note: 'best attempt per exam' }]);
         v.studentWork = collectWritten(s.id).slice(0, 40);
       }
     }
