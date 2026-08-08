@@ -2,10 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BEE Study Center</title>
   <script>
-    // Redirect to login or courses based on auth
+    // Check authentication
     const token = localStorage.getItem('auth') || sessionStorage.getItem('auth');
     if (!token) {
       const params = new URLSearchParams(window.location.search);
@@ -13,14 +12,15 @@
       if (urlToken) {
         sessionStorage.setItem('auth', urlToken);
         localStorage.setItem('auth', urlToken);
-        window.location.href = '/courses';
+        window.history.replaceState({}, document.title, window.location.pathname);
       } else {
         window.location.href = '/login';
+        throw new Error('Not authenticated');
       }
-    } else {
-      window.location.href = '/courses';
     }
   </script>
 </head>
-<body></body>
+<body>
+  <iframe src="/courses.html" style="width:100%; height:100%; border:none; margin:0; padding:0;"></iframe>
+</body>
 </html>

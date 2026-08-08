@@ -84,9 +84,9 @@ app.get('/logout', (req, res) => {
   res.redirect('/login');
 });
 
-// Course platform (protected)
+// Course platform (protected) - serve the Claude Design bundled export
 app.get('/courses', isAuthenticated, (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.sendFile(path.join(__dirname, 'public', 'courses.html'));
 });
 
 // Exam grading endpoint (Claude AI)
