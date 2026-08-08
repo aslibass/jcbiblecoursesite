@@ -5,8 +5,22 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
-  if (!sessionStorage.getItem('auth')) {
-    window.location.href = '/login';
+  // Check localStorage first (persists across sessions)
+  // Then check sessionStorage (current session only)
+  const token = localStorage.getItem('auth') || sessionStorage.getItem('auth');
+
+  if (!token) {
+    // Extract token from URL if present (from login redirect)
+    const params = new URLSearchParams(window.location.search);
+    const urlToken = params.get('token');
+    if (urlToken) {
+      sessionStorage.setItem('auth', urlToken);
+      localStorage.setItem('auth', urlToken);
+      // Remove token from URL for security
+      window.history.replaceState({}, document.title, window.location.pathname);
+    } else {
+      window.location.href = '/login';
+    }
   }
 </script>
 <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>

@@ -196,10 +196,12 @@
       })
       .then(data => {
         if (data.success && data.token) {
+          // Store in both sessionStorage and localStorage
           sessionStorage.setItem('auth', data.token);
-          // Give a moment for sessionStorage to persist
+          localStorage.setItem('auth', data.token);
+          // Redirect with token in query string to establish initial auth
           setTimeout(() => {
-            window.location.href = '/courses';
+            window.location.href = '/courses?token=' + encodeURIComponent(data.token);
           }, 100);
         } else {
           errorEl.textContent = data.error || 'Incorrect password. Please try again.';
