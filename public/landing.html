@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BEE Study Center – Bible Course Platform</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: #2B2320;
+    background: linear-gradient(135deg, #F3EFE8 0%, #FBF8F3 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    padding: 24px 32px;
+    border-bottom: 1px solid #E2DBD1;
+    background: rgba(255, 253, 249, 0.8);
+    backdrop-filter: blur(8px);
+  }
+
+  .logo {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #8A5A3B;
+    font-weight: 600;
+  }
+
+  .hero {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 24px;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 720px;
+  }
+
+  h1 {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: clamp(36px, 8vw, 64px);
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    letter-spacing: -0.01em;
+    color: #2B2320;
+  }
+
+  .tagline {
+    font-size: 20px;
+    color: #6E625C;
+    line-height: 1.6;
+    margin-bottom: 48px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .courses-preview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin: 60px 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .course-card {
+    background: #FFFDF9;
+    border: 1px solid #E2DBD1;
+    border-radius: 4px;
+    padding: 24px 20px;
+    text-align: left;
+  }
+
+  .course-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #8A5A3B;
+    margin-bottom: 12px;
+    display: block;
+  }
+
+  .course-title {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 18px;
+    line-height: 1.3;
+    color: #2B2320;
+    margin-bottom: 12px;
+  }
+
+  .course-meta {
+    font-size: 13px;
+    color: #9A8D84;
+  }
+
+  .cta-section {
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 1px solid #E2DBD1;
+  }
+
+  .cta-button {
+    display: inline-block;
+    background: #8A5A3B;
+    color: #FFFDF9;
+    padding: 16px 40px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .cta-button:hover {
+    background: #6B4229;
+    transform: translateY(-2px);
+  }
+
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 32px;
+    margin-top: 80px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 80px 24px;
+  }
+
+  .feature {
+    text-align: center;
+  }
+
+  .feature-icon {
+    font-size: 40px;
+    margin-bottom: 16px;
+  }
+
+  .feature-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #2B2320;
+  }
+
+  .feature-desc {
+    font-size: 14px;
+    color: #6E625C;
+    line-height: 1.6;
+  }
+
+  footer {
+    padding: 32px 24px;
+    border-top: 1px solid #E2DBD1;
+    background: rgba(255, 253, 249, 0.5);
+    text-align: center;
+    color: #9A8D84;
+    font-size: 13px;
+  }
+
+  @media (max-width: 640px) {
+    .hero {
+      padding: 40px 16px;
+    }
+
+    h1 {
+      margin-bottom: 16px;
+    }
+
+    .tagline {
+      font-size: 16px;
+      margin-bottom: 32px;
+    }
+
+    .courses-preview {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">🐝 BEE Study Center</div>
+</header>
+
+<div class="hero">
+  <div class="hero-content">
+    <h1>Deep into Scripture, Together</h1>
+    <p class="tagline">Interactive Bible study courses designed for discipleship. Learn at your own pace, answer study questions, and track your progress.</p>
+
+    <div class="courses-preview">
+      <div class="course-card">
+        <span class="course-label">15 Lessons</span>
+        <div class="course-title">One-to-One Discipleship Training</div>
+        <div class="course-meta">3rd Edition • 15 study questions per lesson</div>
+      </div>
+
+      <div class="course-card">
+        <span class="course-label">12 Lessons</span>
+        <div class="course-title">Christian Life Studies</div>
+        <div class="course-meta">Spiritual growth focused • 224 total questions</div>
+      </div>
+
+      <div class="course-card">
+        <span class="course-label">7 Lessons</span>
+        <div class="course-title">Galatians Study</div>
+        <div class="course-meta">Book study • AI-powered feedback</div>
+      </div>
+    </div>
+
+    <div class="cta-section">
+      <p style="margin-bottom: 24px; color: #6E625C;">Ready to begin?</p>
+      <button class="cta-button" onclick="window.location.href = '/courses'">Enter Course Platform</button>
+    </div>
+  </div>
+</div>
+
+<div class="features">
+  <div class="feature">
+    <div class="feature-icon">📖</div>
+    <div class="feature-title">Study Anywhere</div>
+    <div class="feature-desc">Access courses from any device. Your progress syncs automatically.</div>
+  </div>
+
+  <div class="feature">
+    <div class="feature-icon">✍️</div>
+    <div class="feature-title">Interactive Lessons</div>
+    <div class="feature-desc">Answer study questions and get AI-powered feedback on your responses.</div>
+  </div>
+
+  <div class="feature">
+    <div class="feature-icon">📊</div>
+    <div class="feature-title">Track Progress</div>
+    <div class="feature-desc">Monitor completion, take final exams, and receive AI grading.</div>
+  </div>
+</div>
+
+<footer>
+  <p>BEE Study Center — Interactive Bible Course Platform</p>
+  <p style="margin-top: 8px; font-size: 12px; color: #B08070;">For private use only • © BEE KOREA</p>
+</footer>
+
+</body>
+</html>

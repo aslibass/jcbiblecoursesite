@@ -41,8 +41,13 @@ app.use(express.static(path.join(__dirname, 'public'), {
 // Serve JSON data
 app.use('/data', express.static(path.join(__dirname, 'data')));
 
-// Main course site page
+// Landing page
 app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'landing.html'));
+});
+
+// Course platform
+app.get('/courses', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
