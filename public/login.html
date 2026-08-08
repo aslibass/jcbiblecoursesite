@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BEE Study Center – Login</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: #2B2320;
+    background: linear-gradient(135deg, #F3EFE8 0%, #FBF8F3 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+  }
+
+  .login-container {
+    width: 100%;
+    max-width: 400px;
+    background: #FFFDF9;
+    border: 1px solid #E2DBD1;
+    border-radius: 6px;
+    padding: 48px 40px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+
+  .logo {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #8A5A3B;
+    margin-bottom: 32px;
+    text-align: center;
+    display: block;
+  }
+
+  h1 {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 12px;
+    letter-spacing: -0.01em;
+    text-align: center;
+  }
+
+  .subtitle {
+    text-align: center;
+    color: #6E625C;
+    margin-bottom: 32px;
+    font-size: 14px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: block;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #8A5A3B;
+    margin-bottom: 8px;
+  }
+
+  input[type="password"] {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #E2DBD1;
+    border-radius: 3px;
+    background: #FCFAF6;
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 16px;
+    color: #2B2320;
+    transition: border-color 0.2s;
+  }
+
+  input[type="password"]:focus {
+    outline: none;
+    border-color: #8A5A3B;
+    background: #FFFDF9;
+  }
+
+  button {
+    width: 100%;
+    padding: 14px 20px;
+    background: #8A5A3B;
+    color: #FFFDF9;
+    border: none;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: inherit;
+  }
+
+  button:hover {
+    background: #6B4229;
+  }
+
+  button:active {
+    transform: translateY(1px);
+  }
+
+  .error {
+    background: #FBF1EC;
+    border: 1px solid #EBD5C9;
+    border-radius: 3px;
+    padding: 12px 14px;
+    color: #A0522D;
+    font-size: 13px;
+    margin-bottom: 20px;
+    display: none;
+  }
+
+  .error.show {
+    display: block;
+  }
+
+  .footer {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 12px;
+    color: #9A8D84;
+  }
+
+  input[type="password"]::placeholder {
+    color: #B08070;
+  }
+</style>
+</head>
+<body>
+
+<div class="login-container">
+  <span class="logo">🐝 BEE Study Center</span>
+  <h1>Welcome</h1>
+  <p class="subtitle">Enter your password to access the course platform</p>
+
+  <div class="error" id="error"></div>
+
+  <form onsubmit="handleLogin(event)">
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input
+        type="password"
+        id="password"
+        placeholder="Enter password"
+        autocomplete="off"
+        required
+      />
+    </div>
+
+    <button type="submit">Unlock Platform</button>
+  </form>
+
+  <div class="footer">
+    For authorized users only
+  </div>
+</div>
+
+<script>
+  function handleLogin(e) {
+    e.preventDefault();
+    const password = document.getElementById('password').value;
+    const errorEl = document.getElementById('error');
+
+    fetch('/api/login', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ password })
+    })
+      .then(r => r.json())
+      .then(data => {
+        if (data.success) {
+          sessionStorage.setItem('auth', data.token);
+          window.location.href = '/';
+        } else {
+          errorEl.textContent = 'Incorrect password. Please try again.';
+          errorEl.classList.add('show');
+          document.getElementById('password').value = '';
+          document.getElementById('password').focus();
+        }
+      })
+      .catch(err => {
+        errorEl.textContent = 'An error occurred. Please try again.';
+        errorEl.classList.add('show');
+      });
+  }
+
+  // Check if already logged in
+  if (sessionStorage.getItem('auth')) {
+    window.location.href = '/';
+  }
+</script>
+
+</body>
+</html>

@@ -7,12 +7,34 @@
 
 const express = require('express');
 const path = require('path');
+const crypto = require('crypto');
 const app = express();
 
 const PORT = process.env.PORT || 3000;
+const SITE_PASSWORD = process.env.SITE_PASSWORD || 'biblestudy';
 
 // Parse JSON request bodies
 app.use(express.json());
+
+// Authentication middleware
+function isAuthenticated(req, res, next) {
+  const token = req.headers.authorization?.replace('Bearer ', '') || req.query.token;
+  if (token && token === crypto.createHash('sha256').update(SITE_PASSWORD).digest('hex')) {
+    return next();
+  }
+
+  const sessionToken = req.body?.token || req.query?.token;
+  if (sessionToken && sessionToken === crypto.createHash('sha256').update(SITE_PASSWORD).digest('hex')) {
+    return next();
+  }
+
+  res.status(401).sendFile(path.join(__dirname, 'public', 'login.html'));
+}
+
+// Redirect unauth to login
+app.get('/login', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'login.html'));
+});
 
 // Claude API client (if available)
 let claudeClient = null;
@@ -41,13 +63,29 @@ app.use(express.static(path.join(__dirname, 'public'), {
 // Serve JSON data
 app.use('/data', express.static(path.join(__dirname, 'data')));
 
-// Landing page
+// Login endpoint
+app.post('/api/login', (req, res) => {
+  const { password } = req.body;
+  if (password === SITE_PASSWORD) {
+    const token = crypto.createHash('sha256').update(SITE_PASSWORD).digest('hex');
+    res.json({ success: true, token });
+  } else {
+    res.status(401).json({ success: false, error: 'Invalid password' });
+  }
+});
+
+// Logout endpoint
+app.get('/logout', (req, res) => {
+  res.redirect('/login');
+});
+
+// Landing page (public)
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'landing.html'));
 });
 
-// Course platform
-app.get('/courses', (req, res) => {
+// Course platform (protected)
+app.get('/courses', isAuthenticated, (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
